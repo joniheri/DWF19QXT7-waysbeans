@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// import Module
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// import Pages
+import AddProductPage from "./Pages/AddProductPage";
+import CartPage from "./Pages/CartPage";
+import LandingPage from "./Pages/LandingPage";
+import ProductDetailPage from "./Pages/ProductDetailPage";
+import ProfilePage from "./Pages/ProfilePage";
+import ShippingPage from "./Pages/ShippingPage";
+import AdminDashboard from "./Pages/AdminDashboard";
+
+// import dll
+import Navbar from "./Components/Navbar/Navbar";
+import PrivateRoute from './Components/PrivateRoot';
+import { GlobalContextProvider } from "./Context/GlobalContext";
+import "./Style.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalContextProvider>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/product/:id" component={ProductDetailPage} />
+            <PrivateRoute exact path="/cart" component={CartPage} />
+            <PrivateRoute exact path="/cart/shipping" component={ShippingPage} />
+            <PrivateRoute exact path="/profile" component={ProfilePage} />
+            <PrivateRoute exact path="/admin" component={AdminDashboard} />
+            <PrivateRoute exact path="/admin/add-product" component={AddProductPage} />
+          </Switch>
+        </div>
+      </Router>
+    </GlobalContextProvider>
   );
 }
 
