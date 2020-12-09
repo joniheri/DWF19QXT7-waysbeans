@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
-import Table from "../ComponentWaysbeans/Table";
+import Table from "../Components/Table";
 
 function AdminDashboard() {
   const [state, dispatch] = useContext(GlobalContext);

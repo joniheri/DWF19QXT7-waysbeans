@@ -1,5 +1,5 @@
 import React from "react";
-import format from "../config/formatingCurency";
+import format from "../Config/formatingCurency";
 import logo from "../Images/Icon.png";
 
 function ProductBox({ children, product }) {

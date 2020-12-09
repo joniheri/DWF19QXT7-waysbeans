@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import user from "../data/user.json";
+import user from "../Data/user.json";
 
 export const GlobalContext = createContext();
 

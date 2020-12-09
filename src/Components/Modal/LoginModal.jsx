@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Modal from "../Mikro/Modal";
-import Popup from "../Mikro/Popup";
+import Modal from "../Modal/CloseModal";
+import Popup from "../Modal/PopupModal";
 
 function LoginModal({ show, setShow, switchModal, dispatch, state }) {
   const [showPop, setShowPop] = useState(false);

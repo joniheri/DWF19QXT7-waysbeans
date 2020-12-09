@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { useHistory } from "react-router-dom";
-import CardProduct from "../ComponentWaysbeans/ProductBox";
-import Modal from "../ComponentWaysbeans/Mikro/Modal";
+import CardProduct from "../Components/ProductBox";
+import Modal from "../Components/Modal/CloseModal";
 
 function Shipping() {
   const [state, dispatch] = useContext(GlobalContext);

@@ -7,8 +7,8 @@ import user from "../../Images/user.png";
 import logout from "../../Images/logout.png";
 import addProduct from "../../Images/addProduct.png";
 import userIcon from "../../Images/userIcon.png";
-import LoginModal from "./LoginModal";
-import RegisterModal from "./RegisterModal";
+import LoginModal from "../Modal/LoginModal";
+import RegisterModal from "../Modal/RegisterModal";
 
 function NavbarComponent() {
   const [state, dispatch] = useContext(GlobalContext);

@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { useParams } from "react-router-dom";
-import LoginModal from "../ComponentWaysbeans/Navbar/LoginModal";
-import RegisterModal from "../ComponentWaysbeans/Navbar/RegisterModal";
-import Popup from "../ComponentWaysbeans/Mikro/Popup";
-import products from "../data/products.json";
-import format from "../config/formatingCurency";
+import LoginModal from "../Components/Modal/LoginModal";
+import RegisterModal from "../Components/Modal/RegisterModal";
+import Popup from "../Components/Modal/PopupModal";
+import products from "../Data/products.json";
+import format from "../Config/formatingCurency";
 
 function ProductDetailPage() {
   const { id } = useParams();
