@@ -617,13 +617,13 @@ th {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-top: -20px;
-  margin-right: -15px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   cursor: pointer;
 }

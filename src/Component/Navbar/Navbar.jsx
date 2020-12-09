@@ -46,22 +46,11 @@ const NotLogin = ({ dispatch, state }) => {
       <button className="mr-15 btn" onClick={onLogin}>
         Login
       </button>
-      <LoginModal
-        show={showLogin}
-        setShow={setShowLogin}
-        switchModal={setShowRegister}
-        dispatch={dispatch}
-        state={state}
-      />
+      <LoginModal show={showLogin} setShow={setShowLogin} switchModal={setShowRegister} dispatch={dispatch} state={state} />
       <button className="btn btn-primary" onClick={onRegister}>
         Register
       </button>
-      <RegisterModal
-        show={showRegister}
-        setShow={setShowRegister}
-        switchModal={setShowLogin}
-        dispatch={dispatch}
-      />
+      <RegisterModal show={showRegister} setShow={setShowRegister} switchModal={setShowLogin} dispatch={dispatch} />
     </>
   );
 };
@@ -90,11 +79,7 @@ const IsLogin = ({ dispatch, state }) => {
           <span>
             <Link to="/profile">
               <div className="row align-center">
-                <img
-                  src={userIcon}
-                  alt="profile-icon"
-                  className="dropdown-img-icon"
-                />
+                <img src={userIcon} alt="profile-icon" className="dropdown-img-icon" />
                 <p className="ml-19 dropdown-text">Profile</p>
               </div>
             </Link>
@@ -104,11 +89,7 @@ const IsLogin = ({ dispatch, state }) => {
               <span>
                 <Link to="/admin">
                   <div className="row align-center">
-                    <img
-                      src={userIcon}
-                      alt="add-product-icon"
-                      className="dropdown-img-icon"
-                    />
+                    <img src={userIcon} alt="add-product-icon" className="dropdown-img-icon" />
                     <p className="ml-19 dropdown-text">Admin</p>
                   </div>
                 </Link>
@@ -116,11 +97,7 @@ const IsLogin = ({ dispatch, state }) => {
               <span>
                 <Link to="/admin/add-product">
                   <div className="row align-center">
-                    <img
-                      src={addProduct}
-                      alt="add-product-icon"
-                      className="dropdown-img-icon"
-                    />
+                    <img src={addProduct} alt="add-product-icon" className="dropdown-img-icon" />
                     <p className="ml-19 dropdown-text">Add Product</p>
                   </div>
                 </Link>
@@ -129,11 +106,7 @@ const IsLogin = ({ dispatch, state }) => {
           ) : null}
           <span onClick={onLogout}>
             <div className="row align-center">
-              <img
-                src={logout}
-                alt="logut-icon"
-                className="dropdown-img-icon"
-              />
+              <img src={logout} alt="logut-icon" className="dropdown-img-icon" />
               <p className="ml-19 dropdown-text">Logut</p>
             </div>
           </span>

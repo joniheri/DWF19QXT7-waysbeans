@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { useHistory } from "react-router-dom";
-import CardProduct from "../Components/ProductBox";
-import Modal from "../Components/Mikro/Modal";
+import CardProduct from "../ComponentWaysbeans/ProductBox";
+import Modal from "../ComponentWaysbeans/Mikro/Modal";
 
 function Shipping() {
   const [state, dispatch] = useContext(GlobalContext);
@@ -42,52 +42,17 @@ function Shipping() {
         <div>
           <h2 className="shipping-page-title">Shipping</h2>
           <div className="column">
-            <input
-              name="name"
-              placeholder="Name"
-              className="input"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              name="email"
-              placeholder="Email"
-              type="email"
-              className="input"
-            />
-            <input
-              name="phone"
-              placeholder="Phone"
-              type="number"
-              className="input"
-            />
-            <input
-              name="possCode"
-              placeholder="Poss Code"
-              type="number"
-              className="input"
-              value={postCode}
-              onChange={(e) => setPostCode(e.target.value)}
-            />
-            <textarea
-              name="address"
-              placeholder="Address"
-              rows={4}
-              className="input"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-            />
+            <input name="name" placeholder="Name" className="input" value={name} onChange={(e) => setName(e.target.value)} />
+            <input name="email" splaceholder="Email" type="email" className="input" />
+            <input name="phone" placeholder="Phone" type="number" className="input" />
+            <input name="possCode" placeholder="Poss Code" type="number" className="input" value={postCode} onChange={(e) => setPostCode(e.target.value)} />
+            <textarea name="address" placeholder="Address" rows={4} className="input" value={address} onChange={(e) => setAddress(e.target.value)} />
             <label htmlFor="file" className="cursor input">
               <div className="space-between align-center">
                 <p>{nameFile}</p>
                 <i className="fas fa-paperclip"></i>
               </div>
-              <input
-                type="file"
-                className="none"
-                id="file"
-                onChange={onUpload}
-              />
+              <input type="file" className="none" id="file" onChange={onUpload} />
             </label>
           </div>
         </div>
@@ -101,9 +66,7 @@ function Shipping() {
           </div>
           <div className="mt-28">
             {/* <Link to="/profile"> */}
-            <button
-              className="btn btn-primary shipping-width-right-con"
-              onClick={onPay}
+            <button className="btn btn-primary shipping-width-right-con" onClick={onPay}
             >
               Pay
             </button>

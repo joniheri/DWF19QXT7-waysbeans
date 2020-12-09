@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../Components/LandingPage/Hero";
-import CardProduct from "../Components/LandingPage/CardProduct";
+import Hero from "../ComponentWaysbeans/LandingPage/Hero";
+import CardProduct from "../ComponentWaysbeans/LandingPage/CardProduct";
 import products from "../data/products.json";
 
 function LandingPage() {

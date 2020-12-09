@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import user from "../Images/user.png";
-import CardProduct from "../Components/ProductBox";
+import CardProduct from "../ComponentWaysbeans/ProductBox";
 import qrode from "../Images/qr-code.png";
 
 function ProfilePage() {

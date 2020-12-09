@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { useParams } from "react-router-dom";
-import LoginModal from "../Components/Navbar/LoginModal";
-import RegisterModal from "../Components/Navbar/RegisterModal";
-import Popup from "../Components/Mikro/Popup";
+import LoginModal from "../ComponentWaysbeans/Navbar/LoginModal";
+import RegisterModal from "../ComponentWaysbeans/Navbar/RegisterModal";
+import Popup from "../ComponentWaysbeans/Mikro/Popup";
 import products from "../data/products.json";
 import format from "../config/formatingCurency";
 
@@ -42,24 +42,9 @@ function ProductDetailPage() {
           Add Cart
         </button>
       </div>
-      <Popup
-        text="Success Add Product"
-        show={showPop}
-        setShow={setShowPop}
-        time={400}
-      />
-      <LoginModal
-        show={showLogin}
-        setShow={setShowLogin}
-        switchModal={setShowRegister}
-        dispatch={dispatch}
-      />
-      <RegisterModal
-        show={showRegister}
-        setShow={setShowRegister}
-        switchModal={setShowLogin}
-        dispatch={dispatch}
-      />
+      <Popup text="Success Add Product" show={showPop} setShow={setShowPop} time={400} />
+      <LoginModal show={showLogin} setShow={setShowLogin} switchModal={setShowRegister} dispatch={dispatch} />
+      <RegisterModal show={showRegister} setShow={setShowRegister} switchModal={setShowLogin} dispatch={dispatch} />
     </div>
   ) : (
     <div>Product Tidak Ada</div>

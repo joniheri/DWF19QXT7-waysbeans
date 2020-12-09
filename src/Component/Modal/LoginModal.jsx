@@ -34,41 +34,16 @@ function LoginModal({ show, setShow, switchModal, dispatch, state }) {
         <div className="w-modal">
           <h2 className="text-modal-title">Login</h2>
           <form className="">
-            <input
-              name="email"
-              placeholder="Email"
-              className="input w-100"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-            <input
-              name="password"
-              placeholder="Password"
-              className="input w-100"
-              onChange={(e) => setPass(e.target.value)}
-              value={pass}
-            />
-            <button
-              className="btn btn-primary w-100 btn-modal mt-28"
-              onClick={onLogin}
-            >
-              Login
-            </button>
-            <p className="text-center text-modal mt-21">
-              Don't have an account ?{" "}
-              <span className="half-bold cursor" onClick={onSwitch}>
-                Klik Here
-              </span>
+            <input name="email" type="email" placeholder="Email" className="input w-100" onChange={(e) => setEmail(e.target.value)} value={email} />
+            <input name="password" type="password" placeholder="Password" className="input w-100" onChange={(e) => setPass(e.target.value)} value={pass} />
+            <button className="btn btn-primary w-100 btn-modal mt-28" onClick={onLogin}>Login</button>
+            <p className="text-center text-modal mt-21">  Don't have and account..? {" "}
+              <span className="half-bold cursor" onClick={onSwitch}>Klik Here</span>
             </p>
           </form>
         </div>
       </div>
-      <Popup
-        text="Wrong Detail"
-        type="danger"
-        show={showPop}
-        setShow={setShowPop}
-      />
+      <Popup text="Email or Password is Wrong!" type="danger" show={showPop} setShow={setShowPop} />
     </Modal>
   );
 }

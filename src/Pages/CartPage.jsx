@@ -23,11 +23,7 @@ function CartPage() {
           <div className="py-17">
             {ProductsCart.length > 0 ? (
               ProductsCart.map((product, index) => (
-                <ProductCard
-                  product={product}
-                  dispatch={dispatch}
-                  key={index}
-                />
+                <ProductCard product={product} dispatch={dispatch} key={index} />
               ))
             ) : (
               <div className="py-17 text-modal">Product Tidak Ada</div>

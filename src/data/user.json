@@ -1,14 +1,14 @@
 [
     {
-        "email": "admin@admin.com",
-        "pass": "123",
-        "name": "Bara Borneo",
+        "email": "admin@email.com",
+        "pass": "12345",
+        "name": "Jon Heri",
         "admin": true
     },
     {
-        "email": "user@user.com",
-        "pass": "123",
-        "name": "Bara Borneo",
+        "email": "user@email.com",
+        "pass": "12345",
+        "name": "Harly",
         "admin": false
     }
 ]

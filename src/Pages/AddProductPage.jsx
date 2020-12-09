@@ -14,12 +14,7 @@ function AddProduct() {
           <input name="name" placeholder="Name" className="input" />
           <input name="stock" placeholder="Stock" className="input" />
           <input name="price" placeholder="Price" className="input" />
-          <textarea
-            name="desc"
-            placeholder="Description Product"
-            rows={4}
-            className="input"
-          />
+          <textarea name="desc" placeholder="Description Product" rows={4} className="input" />
           <label htmlFor="file" className="cursor input w-photo-file">
             <div className="space-between align-center">
               <p>{nameFile}</p>

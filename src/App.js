@@ -2,17 +2,17 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import Pages
-import AddProductPage from "./Pages/AddProductPage";
-import CartPage from "./Pages/CartPage";
-import LandingPage from "./Pages/LandingPage";
-import ProductDetailPage from "./Pages/ProductDetailPage";
-import ProfilePage from "./Pages/ProfilePage";
-import ShippingPage from "./Pages/ShippingPage";
-import AdminDashboard from "./Pages/AdminDashboard";
+import AddProductPage from "./PageWaysbeans/AddProductPage";
+import CartPage from "./PageWaysbeans/CartPage";
+import LandingPage from "./PageWaysbeans/LandingPage";
+import ProductDetailPage from "./PageWaysbeans/ProductDetailPage";
+import ProfilePage from "./PageWaysbeans/ProfilePage";
+import ShippingPage from "./PageWaysbeans/ShippingPage";
+import AdminDashboard from "./PageWaysbeans/AdminDashboard";
 
 // import dll
-import Navbar from "./Components/Navbar/Navbar";
-import PrivateRoute from './Components/PrivateRoot';
+import Navbar from "./ComponentWaysbeans/Navbar/Navbar";
+import PrivateRoute from './ComponentWaysbeans/PrivateRoot';
 import { GlobalContextProvider } from "./Context/GlobalContext";
 import "./Style.scss";
 

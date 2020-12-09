@@ -10,9 +10,9 @@ function Hero() {
           <img src={logo} alt="logo-hero" className="logo-hero" />
           <h2 className="text-title-black">BEST QUALITY COFFEE BEANS</h2>
           <p className="text-desc-black mt-26 mr-15">
-            Quality freshly roasted coffee made just for you. Pour, brew and
-            enjoy
+            Quality freshly roasted coffee made just for you.
           </p>
+          <p>Pour, brew and enjoy</p>
         </div>
       </div>
       <div>
